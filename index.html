@@ -11,33 +11,44 @@
 <body>
     <div class="imgLogo">
         <img src="assets/imgs/logo.png" />
-      </div>
+    </div>
     
-      <nav class="menuppal">
+    <nav class="menuppal">
         <ul>
           <li><a href="#">Inicio</a></li>
           <li><a href="#galeria">Galería</a></li>
         </ul>
-      </nav>
-      <main class="contenido">
+    </nav>
+
+    <main class="contenido">
       <div class="hero-content">
         <video autoplay muted loop id="video-bg">
           <source src="assets/videos/gijon.mp4" type="video/mp4">
         </video>
-        <h1>GIJÓN: la ciudad más bonita del mundo</h1>
-      </div>
+        <h1>GIJÓN</h1>
+        <h2>La ciudad más bonita del mundo</h2>
+    </div>
 
     <section id="galeria">
-        <h3>GALERÍA</h3>
-        <ul class="imgGaleria"></ul>
-        <ul class="imgGaleria"></ul>
-        <ul class="imgGaleria"></ul>
-        <ul class="imgGaleria"></ul>
-        <ul class="imgGaleria"></ul>
-        <ul class="imgGaleria"></ul>
+        <h3 class="tituloGaleria">GALERÍA</h3>
+        <div class="galeria-container">
+          <ul class="imgGaleria"></ul>
+          <ul class="imgGaleria"></ul>
+          <ul class="imgGaleria"></ul>
+          <ul class="imgGaleria"></ul>
+          <ul class="imgGaleria"></ul>
+          <ul class="imgGaleria"></ul>
+        </div>
     </section>
 
-    <footer>
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Imagen en lightbox">
+        </div>
+    </div>
+
+    <footer class="footer">
         <p>JAIME FERNÁNDEZ CALVO - DWEC DIW</p>
     </footer>
 

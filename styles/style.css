@@ -4,6 +4,10 @@
   src: url("/assets/fonts/Comic_Neue/ComicNeue-Bold.ttf");
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Kdam+Thmor+Pro&family=Merriweather:wght@300;700&family=Roboto:wght@300&family=Ubuntu:ital@1&family=Young+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
 
 /* MENÚ Y LOGO */
 .imgLogo {
@@ -47,7 +51,7 @@
   text-transform: none;
   font-weight: bold;
   margin-left: 20px;
-  /* font-family: */
+  font-family: Kdam Thmor Pro;
 }
 
 .menuppal ul li a {
@@ -133,7 +137,7 @@
   align-items: center;
   justify-content: center;
   font-size: 2rem;
-  /* font-family: */
+  font-family: Roboto Flex;
 }
 
 .imgGaleria {
@@ -149,6 +153,50 @@
     height: 100%;
     width: 100%;
 }
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+    text-align: center;
+  }
+  
+  .lightbox-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .lightbox-content img {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  .close {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #ccc;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
 
 /* FOOTER */
 .footer {
